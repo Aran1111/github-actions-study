@@ -3,24 +3,22 @@ name: 我的第一个自动化工作流
 # 触发事件
 on: 
   push: 
-    branchs: 
+    branches: 
       - main
-
 
 # 任务
 jobs:
   hello: # hello 只是这个 job 的名字（ID）
     runs-on: ubuntu-latest
     
-    
     steps: 
-    - name: 拉取仓库代码到虚拟机
-    - uses: actions/checkout@v4 # github写好的actions
+      - name: 拉取仓库代码到虚拟机
+        uses: actions/checkout@v4
     
-    - name: Say Hello
-      run: |
-        echo "Hello GitHub Actions"
-        echo "当前目录："
-        pwd
-        echo "当前文件："
-        ls
+      - name: Say Hello
+        run: |
+          echo "Hello GitHub Actions"
+          echo "当前目录："
+          pwd
+          echo "当前文件："
+          ls
