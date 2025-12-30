@@ -18,9 +18,9 @@ jobs:
     - uses: actions/checkout@v4 # github写好的actions
     
     - name: Say Hello
-    run: |
-          echo "Hello GitHub Actions"
-          echo "当前目录："
-          pwd
-          echo "当前文件："
-          ls
+      run: |
+        echo "Hello GitHub Actions"
+        echo "当前目录："
+        pwd
+        echo "当前文件："
+        ls
