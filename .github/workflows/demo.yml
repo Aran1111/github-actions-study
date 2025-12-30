@@ -10,7 +10,7 @@ on:
 # 任务
 jobs:
   hello: # hello 只是这个 job 的名字（ID）
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     
     
     steps: 
